@@ -1,5 +1,5 @@
 name: vehicle_ai_app
-description: Vehicle AI Scan with OpenRouter and Firebase
+description: Vehicle AI Scan & Analysis with OpenRouter and Firebase
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,9 +9,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  # التعامل مع الشبكة والإعدادات والبيئة
   http: ^1.2.0
   flutter_dotenv: ^5.1.0
   shared_preferences: ^2.2.2
+  image_picker: ^1.0.7
+
+  # خدمات Firebase
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  cloud_firestore: ^5.0.0
+  firebase_storage: ^12.0.0
 
 dev_dependencies:
   flutter_test:
@@ -19,3 +28,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - .env
